@@ -8,7 +8,6 @@
 * [CSS3](http://ali.md/css3ref)
 * [1Styles](http://ali.md/1styles)
 * [JavaScript](http://ali.md/wiki/javascript)
-* [html5shiv](http://ali.md/html5shiv)
 * [PHP](http://ali.md/php/)
 * [MySQL](http://ali.md/wiki/mysql)
 

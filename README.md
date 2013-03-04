@@ -15,7 +15,7 @@
 * [Ali Mihandoost `AliMD`](https://github.com/AliMD)
 * [Ali aGHasizadeh `AliGH`](https://github.com/AliGH)
 
-Base of design : http://inthe7heaven.com/perez/#!/splash
+[Base of design](http://iamalexkempton.net/themes/vFlip_v1-1-preview/template/index3.php#home)
 
 ### [CVWS](http://ali.md/cvws)
 

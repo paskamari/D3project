@@ -22,4 +22,4 @@
 #### HEAD (now)
   * [View full changes](https://github.com/paskamari/d3project)
   
-'All rights reserved'
+`All rights reserved`

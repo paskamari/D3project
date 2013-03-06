@@ -2011,6 +2011,9 @@
   .switcher li:hover {
     border: 1px solid #333;
   }
+  .timeout {
+    -webkit-transition: all 1s;
+  }
   .squares {
     background: url("images/squares.jpg");
   }

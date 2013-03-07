@@ -1968,10 +1968,6 @@
     font-style: normal;
     -webkit-font-smoothing: antialiased;
   }
-  body {
-    color: #000;
-    background-color: #fff;
-  }
   * {
     padding: 0;
     margin: 0;
@@ -2030,6 +2026,10 @@
   }
   .white_carbonfiber {
     background: url("images/white_carbonfiber.png");
+  }
+  .container {
+    width: 700px;
+    height: 600px;
   }
 }
 @media print {

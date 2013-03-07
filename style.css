@@ -2030,6 +2030,15 @@
   .container {
     width: 700px;
     height: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+  }
+  #btnmenu:hover {
+    cursor: pointer;
   }
 }
 @media print {

@@ -4,16 +4,80 @@
 	<meta charset="UTF-8" />
 	<title>D3project</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+   <style type="text/css">
+
+      .container{
+         background-color:red;
+      }
+
+      .topLeft{
+         position: absolute;
+         top:0;
+         left:0;         
+         outline:1px dashed black;
+         background-color: yellow;         
+      }
+      .topRight{
+         position: absolute;
+         top:0;
+         right:0;
+         background-color: yellow;
+         outline:1px dashed black;
+      }
+      .bottomLeft{
+         position: absolute;
+         bottom:0;
+         left:0;
+         background-color: yellow;
+         outline:1px dashed black;
+      }
+      .bottomRight{
+         position: absolute;
+         bottom:0;
+         right:0;
+         background-color: yellow;
+         outline:1px dashed black;
+      }
+      .home{
+         width: 650px;
+         height: 450px;
+         position: absolute;
+         left:0;
+         top:0;
+         bottom:0;
+         right:0;
+         margin:auto;
+         background-color: blue;
+      }
+
+   </style>
 </head>
 <body id="bodysite" class="timeout squares">
-<div class="switcher">
-   <menu>
-      <li class="squares" onclick="document.getElementById('bodysite').className='timeout squares';"></li>
-      <li class="bgnoise" onclick="document.getElementById('bodysite').className='timeout bgnoise';"></li>
-      <li class="white_carbon" onclick="document.getElementById('bodysite').className='timeout white_carbon';"></li>
-      <li class="lghtmesh" onclick="document.getElementById('bodysite').className='timeout lghtmesh';"></li>
-      <li class="white_carbonfiber" onclick="document.getElementById('bodysite').className='timeout white_carbonfiber';"></li>
-   </menu>
+   <div class="switcher">
+      <menu>
+         <li class="squares" onclick="document.getElementById('bodysite').className='timeout squares';"></li>
+         <li class="bgnoise" onclick="document.getElementById('bodysite').className='timeout bgnoise';"></li>
+         <li class="white_carbon" onclick="document.getElementById('bodysite').className='timeout white_carbon';"></li>
+         <li class="lghtmesh" onclick="document.getElementById('bodysite').className='timeout lghtmesh';"></li>
+         <li class="white_carbonfiber" onclick="document.getElementById('bodysite').className='timeout white_carbonfiber';"></li>
+      </menu>
+   </div>
+
+<div class="container">
+   <section id="btnmenu" class="topLeft">Home</section>
+   <section id="btnmenu" class="topRight">About</section>
+   <section id="btnmenu" class="bottomLeft">Resume</section>
+   <section id="btnmenu" class="bottomRight">Contact</section>
+
+   <div class="contain">
+
+      <section class="home">
+         <h1>Hamid Paskamari</h1>
+         <h2>Web Developer / Designer</h2>
+      </section>
+
+   </div>
+
 </div>
 </body>
 </html>

@@ -1984,6 +1984,8 @@
     height: 30px;
     padding: 10px 0px;
     background: #fff;
+    -webkit-border-radius: 5px 0px 0px 0px;
+    border-radius: 5px 0px 0px 0px;
   }
   .switcher menu {
     width: 150px;

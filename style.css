@@ -2037,8 +2037,37 @@
     top: 0;
     margin: auto;
   }
-  #btnmenu:hover {
+  .btnmenu {
+    position: absolute;
+  }
+  .btnmenu:hover {
     cursor: pointer;
+  }
+  .topLeft {
+    top: 0;
+    left: 0;
+  }
+  .topRight {
+    top: 0;
+    right: 0;
+  }
+  .bottomLeft {
+    bottom: 0;
+    left: 0;
+  }
+  .bottomRight {
+    bottom: 0;
+    right: 0;
+  }
+  .home {
+    width: 650px;
+    height: 450px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
   }
 }
 @media print {

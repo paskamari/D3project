@@ -6,49 +6,47 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
    <style type="text/css">
 
-      .container{
-      }
-
-      .topLeft{
-       
-         outline:1px dashed black;
-         background-color: yellow;         
-      }
-
-
-      .topRight{
- 
-         background-color: yellow;
-         outline:1px dashed black;
-      }
-      .bottomLeft{
-  
-         background-color: yellow;
-         outline:1px dashed black;
-      }
-      .bottomRight{
- 
-         background-color: yellow;
-         outline:1px dashed black;
-         
-      }
       .home{
-         
-        /* -webkit-transform: perspective( 650px )rotateX(50deg);*/
          -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
          box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
-
-     
-         background-color: #FFF;
+          text-align: center;
+      }
+      .mout{
+         -webkit-transition:all 400ms;
       }
 
-      .homebxshadow{
-         -webkit-transform: rotate3d(-6, 4,0 , 180deg); 
+      .montopleft{
+         -webkit-transform: rotate3d(-6, 4,0 ,10deg);
          -webkit-box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1);
          box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1);
-         -webkit-transition:all 800ms;
+         -webkit-transition:all 400ms;
          
       }
+
+      .montopright{
+         -webkit-transform: rotate3d(6, 4,0 ,10deg);
+         -webkit-box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.1);
+         box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.1);
+         -webkit-transition:all 400ms;
+         
+      }
+
+      .monbottomleft{
+         -webkit-transform: rotate3d(-6, -4,0 ,10deg);
+         -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+         box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+         -webkit-transition:all 400ms;
+         
+      }
+
+      .monbottomright{
+         -webkit-transform: rotate3d(6, -4,0 ,10deg);
+         -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+         -webkit-transition:all 400ms;
+         
+      }
+      
 
    </style>
 </head>
@@ -64,19 +62,24 @@
    </div>
 
 <div class="container">
-   <section class="topLeft btnmenu" onclick="document.getElementById('homebox').className='home homebxshadow';">Home</section>
-   <section class="topRight btnmenu">About</section>
-   <section class="bottomLeft btnmenu">Resume</section>
-   <section class="bottomRight btnmenu">Contact</section>
+   <!--Menu 4taraf-->
+   <section class="topLeft btnmenu" onmouseover="document.getElementById('homebox').className='home montopleft';"
+      onmouseout="document.getElementById('homebox').className='home mout';">Home
+   </section>
+   <section class="topRight btnmenu" onmouseover="document.getElementById('homebox').className='home montopright';"
+      onmouseout="document.getElementById('homebox').className='home mout';">About
+   </section>
+   <section class="bottomLeft btnmenu" onmouseover="document.getElementById('homebox').className='home monbottomleft';"
+      onmouseout="document.getElementById('homebox').className='home mout';">Resume
+   </section>
+   <section class="bottomRight btnmenu" onmouseover="document.getElementById('homebox').className='home monbottomright';"
+      onmouseout="document.getElementById('homebox').className='home mout';">Contact
+   </section>
+   <!--Home-->
 
-   <div class="contain">
-
-      <section id="homebox" class="home">
-         <h1>Hamid Paskamari</h1>
-         <h2>Web Developer / Designer</h2>
-      </section>
-
-   </div>
+   <section id="homebox" class="home">
+      <h1>Hamid Paskamari <br> Web Developer / Designer </h1>
+   </section>
 
 </div>
 </body>

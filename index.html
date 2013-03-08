@@ -4,51 +4,6 @@
 	<meta charset="UTF-8" />
 	<title>D3project</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-   <style type="text/css">
-
-      .home{
-         -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
-         box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
-          text-align: center;
-      }
-      .mout{
-         -webkit-transition:all 400ms;
-      }
-
-      .montopleft{
-         -webkit-transform: rotate3d(-6, 4,0 ,10deg);
-         -webkit-box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1);
-         box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1);
-         -webkit-transition:all 400ms;
-         
-      }
-
-      .montopright{
-         -webkit-transform: rotate3d(6, 4,0 ,10deg);
-         -webkit-box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.1);
-         box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.1);
-         -webkit-transition:all 400ms;
-         
-      }
-
-      .monbottomleft{
-         -webkit-transform: rotate3d(-6, -4,0 ,10deg);
-         -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
-         box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
-         -webkit-transition:all 400ms;
-         
-      }
-
-      .monbottomright{
-         -webkit-transform: rotate3d(6, -4,0 ,10deg);
-         -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-         -webkit-transition:all 400ms;
-         
-      }
-      
-
-   </style>
 </head>
 <body id="bodysite" class="timeout squares">
    <div class="switcher">
@@ -62,6 +17,7 @@
    </div>
 
 <div class="container">
+   
    <!--Menu 4taraf-->
    <section class="topLeft btnmenu" onmouseover="document.getElementById('homebox').className='home montopleft';"
       onmouseout="document.getElementById('homebox').className='home mout';">Home
@@ -75,10 +31,12 @@
    <section class="bottomRight btnmenu" onmouseover="document.getElementById('homebox').className='home monbottomright';"
       onmouseout="document.getElementById('homebox').className='home mout';">Contact
    </section>
-   <!--Home-->
 
+   <!--Home-->
    <section id="homebox" class="home">
-      <h1>Hamid Paskamari <br> Web Developer / Designer </h1>
+      <section class="home-title">
+         <h1>Hamid Paskamari</h1><hr/><h2> Web Developer / Designer </h2>
+      </section>
    </section>
 
 </div>

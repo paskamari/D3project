@@ -7,7 +7,6 @@
    <style type="text/css">
 
       .container{
-         background-color:red;
       }
 
       .topLeft{
@@ -15,6 +14,8 @@
          outline:1px dashed black;
          background-color: yellow;         
       }
+
+
       .topRight{
  
          background-color: yellow;
@@ -29,13 +30,24 @@
  
          background-color: yellow;
          outline:1px dashed black;
+         
       }
       .home{
-
-            -webkit-transform: perspective( 650px )rotateX(50deg);
+         
+        /* -webkit-transform: perspective( 650px )rotateX(50deg);*/
+         -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+         box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
 
      
-         background-color: blue;
+         background-color: #FFF;
+      }
+
+      .homebxshadow{
+         -webkit-transform: rotate3d(-6, 4,0 , 180deg); 
+         -webkit-box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1);
+         box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1);
+         -webkit-transition:all 800ms;
+         
       }
 
    </style>
@@ -52,14 +64,14 @@
    </div>
 
 <div class="container">
-   <section class="topLeft btnmenu">Home</section>
+   <section class="topLeft btnmenu" onclick="document.getElementById('homebox').className='home homebxshadow';">Home</section>
    <section class="topRight btnmenu">About</section>
    <section class="bottomLeft btnmenu">Resume</section>
    <section class="bottomRight btnmenu">Contact</section>
 
    <div class="contain">
 
-      <section class="home">
+      <section id="homebox" class="home">
          <h1>Hamid Paskamari</h1>
          <h2>Web Developer / Designer</h2>
       </section>

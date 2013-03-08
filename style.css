@@ -2039,12 +2039,15 @@
   }
   .btnmenu {
     position: absolute;
-    -webkit-transition: font-size 0.3s;
+    font-weight: bold;
+    color: #777;
+    -webkit-transition: all 0.3s;
   }
   .btnmenu:hover {
     cursor: pointer;
     font-size: 40px;
-    -webkit-transition: font-size 0.3s;
+    color: #333;
+    -webkit-transition: all 0.5s;
   }
   .topLeft {
     top: 0;
@@ -2071,6 +2074,7 @@
     bottom: 0;
     right: 0;
     margin: auto;
+    background-color: #fff;
   }
 }
 @media print {

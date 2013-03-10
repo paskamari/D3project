@@ -1960,6 +1960,111 @@
   .lh40 {
     line-height: 400px;
   }
+  .h41 {
+    height: 410px;
+  }
+  .mh41 {
+    min-height: 410px;
+  }
+  .mt41 {
+    margin-top: 410px;
+  }
+  .mb41 {
+    margin-bottom: 410px;
+  }
+  .pt41 {
+    padding-top: 410px;
+  }
+  .pb41 {
+    padding-bottom: 410px;
+  }
+  .lh41 {
+    line-height: 410px;
+  }
+  .h42 {
+    height: 420px;
+  }
+  .mh42 {
+    min-height: 420px;
+  }
+  .mt42 {
+    margin-top: 420px;
+  }
+  .mb42 {
+    margin-bottom: 420px;
+  }
+  .pt42 {
+    padding-top: 420px;
+  }
+  .pb42 {
+    padding-bottom: 420px;
+  }
+  .lh42 {
+    line-height: 420px;
+  }
+  .h43 {
+    height: 430px;
+  }
+  .mh43 {
+    min-height: 430px;
+  }
+  .mt43 {
+    margin-top: 430px;
+  }
+  .mb43 {
+    margin-bottom: 430px;
+  }
+  .pt43 {
+    padding-top: 430px;
+  }
+  .pb43 {
+    padding-bottom: 430px;
+  }
+  .lh43 {
+    line-height: 430px;
+  }
+  .h44 {
+    height: 440px;
+  }
+  .mh44 {
+    min-height: 440px;
+  }
+  .mt44 {
+    margin-top: 440px;
+  }
+  .mb44 {
+    margin-bottom: 440px;
+  }
+  .pt44 {
+    padding-top: 440px;
+  }
+  .pb44 {
+    padding-bottom: 440px;
+  }
+  .lh44 {
+    line-height: 440px;
+  }
+  .h45 {
+    height: 450px;
+  }
+  .mh45 {
+    min-height: 450px;
+  }
+  .mt45 {
+    margin-top: 450px;
+  }
+  .mb45 {
+    margin-bottom: 450px;
+  }
+  .pt45 {
+    padding-top: 450px;
+  }
+  .pb45 {
+    padding-bottom: 450px;
+  }
+  .lh45 {
+    line-height: 450px;
+  }
   @font-face {
     font-family: 'Nazanin';
     src: url("fonts/BNazanin.eot");
@@ -2030,8 +2135,8 @@
     background: url("images/white_carbonfiber.png");
   }
   .container {
-    width: 700px;
-    height: 600px;
+    width: 680px;
+    height: 550px;
     position: absolute;
     left: 0;
     right: 0;
@@ -2084,10 +2189,9 @@
     height: 450px;
     position: absolute;
     background-color: #fff;
-    z-index: 10;
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
+    opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: alpha(opacity=0);
     -webkit-box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
     box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
     -moz-box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
@@ -2168,7 +2272,6 @@
     height: 450px;
     background-color: #fff;
     overflow: hidden;
-    z-index: 1;
     position: absolute;
     opacity: 0;
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);

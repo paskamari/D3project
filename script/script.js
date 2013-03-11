@@ -20,7 +20,4 @@ function lghtmesh() {
 }
 function white_carbonfiber() {
 	document.getElementById('bodysite').className='timeout white_carbonfiber';
-
 }
-
-//

@@ -2183,22 +2183,21 @@
     bottom: 0;
     right: 0;
     margin: auto;
+    -webkit-box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
   }
   .home {
     width: 650px;
     height: 450px;
     position: absolute;
     background-color: #fff;
-    opacity: 0;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    filter: alpha(opacity=0);
-    -webkit-box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
-    box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
-  }
-  .mout {
-    -webkit-transition: all 400ms;
-    -moz-transition: all 400ms;
+    z-index: 10;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   .montopleft {
     -webkit-box-shadow: -10px -10px 20px rgba(0,0,0,0.1);

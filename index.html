@@ -12,29 +12,20 @@
          width:                650px;
          height        :    450px;
          background-color :    #fff;
-         z-index:20;
          position: absolute;
-         opacity:0;
-      }
-      .employment{
-         outline:1px dashed red;
       }
 
       .contact{
-                  width:                650px;
+         width:                650px;
          height        :    450px;
          background-color :    #fff;
-         z-index:20;
-      }
-      .contact > *{
-       outline:1px dashed red;
       }
    </style>
 </head>
 <body id="bodysite" class="timeout squares">
    <div class="switcher">
       <menu>
-         <li class="squares" onclick="squares()"></li>
+         <li class="squares" onclick="squares();"></li>
          <li class="bgnoise" onclick="bgnoise();"></li>
          <li class="white_carbon" onclick="white_carbon();"></li>
          <li class="lghtmesh" onclick="lghtmesh();"></li>
@@ -45,31 +36,33 @@
 <div class="container">
    
    <!--Menu 4taraf-->
-   <section class="topLeft btnmenu" onmouseover="document.getElementById('homebox').className='home montopleft';"
-      onmouseout="document.getElementById('homebox').className='home mout';">Home
+   <section class="topLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain montopleft';"
+      onmouseout="document.getElementById('containbox').className='contain';">Home
    </section>
-   <section class="topRight btnmenu" onmouseover="document.getElementById('homebox').className='home montopright';"
-      onmouseout="document.getElementById('homebox').className='home mout';">About
+   <section class="topRight btnmenu" onmouseover="document.getElementById('containbox').className='contain montopright';"
+      onmouseout="document.getElementById('containbox').className='contain';">About
    </section>
-   <section class="bottomLeft btnmenu" onmouseover="document.getElementById('homebox').className='home monbottomleft';"
-      onmouseout="document.getElementById('homebox').className='home mout';">Resume
+   <section class="bottomLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomleft';"
+      onmouseout="document.getElementById('containbox').className='contain';">Resume
    </section>
-   <section class="bottomRight btnmenu" onmouseover="document.getElementById('homebox').className='home monbottomright';"
-      onmouseout="document.getElementById('homebox').className='home mout';">Contact
+   <section class="bottomRight btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomright';"
+      onmouseout="document.getElementById('containbox').className='contain';">Contact
    </section>
 
-   <section class="contain">
+   <section id="containbox" class="contain">
 
       <!--Home-->
-      <section id="homebox" class="home">
+      <section class="home">
          <section class="home-title">
-            <h1>Hamid Paskamari</h1><hr/><h2> Web Developer / Designer </h2>
+            <h1>Hamid Paskamari</h1>
+            <hr/>
+            <h2> Web Developer / Designer</h2>
          </section>
       </section>
 
       <!--About me-->
 
-      <section id="homebox" class="about cover">
+      <section class="about cover">
          <section class="left-about w6 ml1 mt1 left">
             <img src="images/01.jpg" alt="Hamid Paskamari">
             <h3>Hamid Paskamari</h3>
@@ -96,7 +89,7 @@
       </section>
 
       <!-- Resume -->
-      <section id="homebox" class="resume cover">
+      <section class="resume cover">
          <section class="employment w10 h43 mt1 left overhide">
             <h2>Employment</h2>
             <menu class="employment">
@@ -184,7 +177,7 @@
 
       <!-- contact -->
 
-      <section id="homebox" class="contact cover">
+      <section class="contact cover">
 
          <section class="w9 h43 overhide left">
 

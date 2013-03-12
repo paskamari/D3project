@@ -7,26 +7,62 @@
    <script type="text/javascript" src="script/script.js"></script>
 
    <style type="text/css">
-
       .resume{
          width:                650px;
          height        :    450px;
          background-color :    #fff;
          position: absolute;
-                   opacity:0;
-
+         opacity:1;
       }
-
       .contact{
          width:                650px;
          height        :    450px;
          background-color :    #fff;
           position: absolute;
           opacity:0;
+          z-index:-1;
+      }
+      section.page{
+         width         :       650px;
+         height         :     450px;
+         position        :     absolute;
+         left             : 0;
+         top               :0;
+         right              :  0;
+         bottom              : 0;
+         margin               :auto;
+         background-color     :#FFF;
+         -webkit-transition: all 2s;
+      }
+      section.page.home{
+         left: -1000px;
+         -webkit-transform: rotate(90deg);
+         -webkit-transform-origin: left top;
+         -moz-transform: rotate(90deg);
+         -moz-transform-origin: left top;
+      }
+      .page1 section.page.home{
+         left: 0px;
+         -webkit-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
+      }
+      @-webkit-keyframes ttt{
+         0%{
+            opacity: 1  ;
+         }
+         100%{
+            opacity: 0 ;
+         }
+      }
+      .btnselect{
+         color:red;
+         font-size :           40px;
+         -webkit-transition:      all 0.5s;
+         -moz-transition :     all 0.5s;
       }
    </style>
 </head>
-<body id="bodysite" class="timeout squares">
+<body id="bodysite" class="timeout bgnoise">
    <div class="switcher">
       <menu>
          <li class="squares" onclick="squares();"></li>
@@ -41,23 +77,23 @@
    
    <!--Menu 4taraf-->
    <section class="topLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain montopleft';"
-      onmouseout="mouseout();">Home
+      onmouseout="mouseout();" onclick="this.style.color='#CCC';">Home
    </section>
    <section class="topRight btnmenu" onmouseover="document.getElementById('containbox').className='contain montopright';"
-      onmouseout="mouseout();">About
+      onmouseout="mouseout();" onclick="menu4click();">About
    </section>
    <section class="bottomLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomleft';"
-      onmouseout="mouseout();">Resume
+      onmouseout="mouseout();" onclick="menu4click();">Resume
    </section>
    <section class="bottomRight btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomright';"
-      onmouseout="mouseout();">Contact
+      onmouseout="mouseout();" onclick="menu4click();">Contact
    </section>
 
    <section id="containbox" class="contain">
 
       <!--Home-->
 
-      <section class="home cover">
+      <section id="home" class="page home cover">
          <section class="home-title">
             <h1>Hamid Paskamari</h1>
             <hr/>
@@ -66,7 +102,7 @@
       </section>
       <!--About me-->
 
-      <section class="about cover">
+      <section id="about" class="about cover">
          <section class="left-about w6 ml1 mt1 left">
             <img src="images/01.jpg" alt="Hamid Paskamari">
             <h3>Hamid Paskamari</h3>
@@ -92,7 +128,7 @@
       </section>
 
       <!-- Resume -->
-      <section class="resume cover">
+      <section id="resume" class="resume cover">
          <section class="employment w10 h43 mt1 left overhide">
             <h2>Employment</h2>
             <menu class="employment">
@@ -180,7 +216,7 @@
 
       <!-- contact -->
 
-      <section class="contact cover">
+      <section id="contact" class="contact cover">
 
          <section class="w9 h43 overhide left">
 

@@ -2183,21 +2183,14 @@
     bottom: 0;
     right: 0;
     margin: auto;
+    background-color: #fff;
+    -webkit-transform: rotate3d(-6, 4, 0, 0deg);
+    -moz-transform: rotate3d(-6, 4, 0, 0deg);
     -webkit-box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
     box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
     -moz-box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
     -webkit-transition: all 400ms;
     -moz-transition: all 400ms;
-  }
-  .home {
-    width: 650px;
-    height: 450px;
-    position: absolute;
-    background-color: #fff;
-    z-index: 10;
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
   .montopleft {
     -webkit-box-shadow: -10px -10px 20px rgba(0,0,0,0.1);
@@ -2234,6 +2227,17 @@
     -moz-transform: rotate3d(6, -4, 0, 10deg);
     -webkit-transition: all 400ms;
     -moz-transition: all 400ms;
+  }
+  .home {
+    width: 650px;
+    height: 450px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
   }
   .home-title {
     height: 200px;
@@ -2272,9 +2276,11 @@
     background-color: #fff;
     overflow: hidden;
     position: absolute;
-    opacity: 0;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    filter: alpha(opacity=0);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
   }
   .left-about {
     height: 430px;

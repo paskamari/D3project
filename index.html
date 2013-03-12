@@ -13,12 +13,16 @@
          height        :    450px;
          background-color :    #fff;
          position: absolute;
+                   opacity:0;
+
       }
 
       .contact{
          width:                650px;
          height        :    450px;
          background-color :    #fff;
+          position: absolute;
+          opacity:0;
       }
    </style>
 </head>
@@ -37,29 +41,29 @@
    
    <!--Menu 4taraf-->
    <section class="topLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain montopleft';"
-      onmouseout="document.getElementById('containbox').className='contain';">Home
+      onmouseout="mouseout();">Home
    </section>
    <section class="topRight btnmenu" onmouseover="document.getElementById('containbox').className='contain montopright';"
-      onmouseout="document.getElementById('containbox').className='contain';">About
+      onmouseout="mouseout();">About
    </section>
    <section class="bottomLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomleft';"
-      onmouseout="document.getElementById('containbox').className='contain';">Resume
+      onmouseout="mouseout();">Resume
    </section>
    <section class="bottomRight btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomright';"
-      onmouseout="document.getElementById('containbox').className='contain';">Contact
+      onmouseout="mouseout();">Contact
    </section>
 
    <section id="containbox" class="contain">
 
       <!--Home-->
-      <section class="home">
+
+      <section class="home cover">
          <section class="home-title">
             <h1>Hamid Paskamari</h1>
             <hr/>
             <h2> Web Developer / Designer</h2>
          </section>
       </section>
-
       <!--About me-->
 
       <section class="about cover">
@@ -85,7 +89,6 @@
                Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.
             </p>
          </section>
-
       </section>
 
       <!-- Resume -->

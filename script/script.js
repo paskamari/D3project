@@ -21,3 +21,8 @@ function lghtmesh() {
 function white_carbonfiber() {
 	document.getElementById('bodysite').className='timeout white_carbonfiber';
 }
+
+//onmouseout menu4
+function mouseout() {
+	document.getElementById('containbox').className='contain';
+}

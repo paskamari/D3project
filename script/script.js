@@ -20,7 +20,7 @@ function white_carbonfiber() {
 
 //onmouseout menu4
 function mouseout() {
-	document.getElementById('containbox').className='contain';
+	document.getElementById('mon').className='cont';
 }
 
 ///ofghjboiehoie
@@ -29,8 +29,15 @@ function menu4click(){
 	document.getElementById('containbox').style.animation="ttt 1s forwards";	
 }
 
+//window.onload=function(){
+	
+//	var lists = document.getElementsByClassName('menu4').item(0).getElementsByTagName('li');
 
-function reply_click(clicked_id)
-{
-    alert(clicked_id);
-}
+//	for (var i=0; i<lists.length; i++) {
+//		(function(j){
+//			lists.item(j).onclick=function(){
+//				this.className='brd333';
+//			}
+//		})(i);
+//	}
+//}

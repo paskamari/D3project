@@ -7,19 +7,107 @@
    <script type="text/javascript" src="script/script.js"></script>
 
    <style type="text/css">
+
+   /*
+
+   .cont{
+      width     :           650px;
+      height     :          450px;
+      position    :         absolute;
+      background-color:     #FFF;
+      -webkit-box-shadow         : 0px 0px 10px rgba(0, 0, 0, 0.1);
+      -webkit-transition   :   all 600ms;
+
+   }  
+   
+   .montopleft{
+      -webkit-animation:sholt 1s forwards;      
+      -webkit-transform      : rotate3d(-6,4,0 ,10deg);
+      -moz-transform        :  rotate3d(-6,4,0 ,10deg);
+      -webkit-transition   :   all 400ms;
+      -moz-transition     : all 400ms;
+   }
+
+   @-webkit-keyframes sholt{
+      0%{-webkit-box-shadow         : 0px 0px 10px rgba(0, 0, 0, 0.1);}
+      100%{-webkit-box-shadow         :  -10px -10px 20px rgba(0, 0, 0, 0.1);}
+   }
+
+   .cc{
+      width       :         650px;
+      height       :        450px;
+      position      :       absolute;
+      z-index          : -10;
+      opacity           :0;
+      box-shadow         :  0 0 5px 3px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow     : 0 0 5px 3px rgba(0, 0, 0, 0.1);
+      -webkit-transform :      rotate3d(-6,4,0 ,90deg);
+      -moz-transform     :     rotate3d(-6,4,0 ,90deg);
+      -webkit-transition   :   all 2000ms;
+      
+   }
+   .home{
+      width       :         650px;
+      height       :        450px;
+      position      :       absolute;
+      z-index          : 1;
+      opacity           :1;
+      -webkit-transition   :   all 800ms;
+      -webkit-transform :      rotate3d(-6,4,0 ,0deg);
+      
+   }
+
+   .cc{
+      width       :         650px;
+      height       :        450px;
+      position      :       absolute;
+      -webkit-transform :      rotate3d(-6,4,0 ,90deg);
+      -moz-transform     :     rotate3d(-6,4,0 ,90deg);
+      z-index          : -10;
+      opacity           :0;
+      -webkit-transition   :   all 2000ms;
+      }
+
+   .about{
+      width:                650px;
+      height:            450px;
+      z-index       :    -10;
+      position       :   absolute;
+      opacity        :   0;
+      -webkit-transform :      rotate3d(-6,4,0 ,270deg);
+      -moz-transform     :     rotate3d(-6,4,0 ,270deg);
+   }
+   .ff{
+      width:                650px;
+      height:            450px;
+      overflow          :   hidden ;
+      z-index       :    10;
+      position       :   absolute;
+      opacity        :   1;
+      -webkit-transform :      rotate3d(-6,4,0 ,360deg);
+      -moz-transform     :     rotate3d(-6,4,0 ,360deg);  
+      -webkit-transition   :   all 4000ms;
+   }
+
+
+
+
       .resume{
          width:                650px;
          height        :    450px;
-         background-color :    #fff;
          position: absolute;
-         opacity:1;
+         opacity:0;
+         -webkit-transform :      rotate3d(-6,4,0 ,270deg);
+      -moz-transform     :     rotate3d(-6,4,0 ,270deg);
+         
       }
       .contact{
          width:                650px;
          height        :    450px;
-         background-color :    #fff;
           position: absolute;
           opacity:0;
+          -webkit-transform :      rotate3d(-6,4,0 ,270deg);
+      -moz-transform     :     rotate3d(-6,4,0 ,270deg);
           z-index:-1;
       }
       section.page{
@@ -59,219 +147,226 @@
          font-size :           40px;
          -webkit-transition:      all 0.5s;
          -moz-transition :     all 0.5s;
-      }
+      }*/
    </style>
 </head>
 <body id="bodysite" class="timeout bgnoise">
-   <div class="switcher">
+   <div class="switcher cover">
       <menu>
-         <li class="squares" onclick="squares();"></li>
-         <li class="bgnoise" onclick="bgnoise();"></li>
-         <li class="white_carbon" onclick="white_carbon();"></li>
-         <li class="lghtmesh" onclick="lghtmesh();"></li>
-         <li class="white_carbonfiber" onclick="white_carbonfiber();"></li>
+         <li onclick="squares();"><img src='images/squares.jpg' /></li>
+         <li onclick="bgnoise();"><img src='images/bgnoise.jpg' /></li>
+         <li onclick="white_carbon();"><img src='images/white_carbon.png' /></li>
+         <li onclick="lghtmesh();"><img src='images/lghtmesh.jpg' /></li>
+         <li onclick="white_carbonfiber();"><img src='images/white_carbonfiber.png' /></li>
       </menu>
    </div>
 
 <div class="container">
    
    <!--Menu 4taraf-->
-   <section class="topLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain montopleft';"
-      onmouseout="mouseout();" onclick="this.style.color='#CCC';">Home
+   <section class="topLeft btnmenu" onmouseover="document.getElementById('mon').className='cont montopleft';"
+      onmouseout="mouseout();" 
+      onclick="document.getElementById('dd').className='cc'; document.getElementById('g').className='ff';">Home
    </section>
-   <section class="topRight btnmenu" onmouseover="document.getElementById('containbox').className='contain montopright';"
+   <section class="topRight btnmenu" onmouseover="document.getElementById('mon').className='cont montopright';"
       onmouseout="mouseout();" onclick="menu4click();">About
    </section>
-   <section class="bottomLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomleft';"
+   <section class="bottomLeft btnmenu" onmouseover="document.getElementById('mon').className='cont monbottomleft';"
       onmouseout="mouseout();" onclick="menu4click();">Resume
    </section>
-   <section class="bottomRight btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomright';"
+   <section class="bottomRight btnmenu" onmouseover="document.getElementById('mon').className='cont monbottomright';"
       onmouseout="mouseout();" onclick="menu4click();">Contact
    </section>
 
    <section id="containbox" class="contain">
 
-      <!--Home-->
-
-      <section id="home" class="page home cover">
-         <section class="home-title">
-            <h1>Hamid Paskamari</h1>
-            <hr/>
-            <h2> Web Developer / Designer</h2>
-         </section>
-      </section>
       <!--About me-->
 
-      <section id="about" class="about cover">
-         <section class="left-about w6 ml1 mt1 left">
-            <img src="images/01.jpg" alt="Hamid Paskamari">
-            <h3>Hamid Paskamari</h3>
-            <h4>Web Developer / Designer</h4>
+      <section id="g" class="about">
+         <section id="mon" class="cont">
+            <section class="left-about w6 ml1 mt1 left">
+               <img src="images/01.jpg" alt="Hamid Paskamari">
+               <h3>Hamid Paskamari</h3>
+               <h4>Web Developer / Designer</h4>
+            </section>
+            <section class="right-about w9 mt1 right">
+               <h2>Doing it Right Since 1997</h2>
+               <p>
+                  Sed <strong>magnis</strong> <em>augue</em> lacus a, magna elementum. <a href="#portfolio">Portfolio</a>
+                  parturient phasellus tincidunt nisi, augue vel sed dapibus sed enim.
+                  Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.
+               </p>
+               <p>
+                  Sed magnis augue lacus a, magna elementum. Parturient phasellus <a href="#resume">resume</a>
+                  tincidunt nisi, augue vel sed dapibus sed enim.
+                  Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.
+               </p>
+               <p>
+                  Augue vel sed dapibus sed enim.
+                  Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.
+               </p>
+            </section>
          </section>
-         <section class="right-about w9 mt1 right">
-            <h2>Doing it Right Since 1997</h2>
-            <p>
-               Sed <strong>magnis</strong> <em>augue</em> lacus a, magna elementum. <a href="#portfolio">Portfolio</a>
-               parturient phasellus tincidunt nisi, augue vel sed dapibus sed enim.
-               Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.
-            </p>
-            <p>
-               Sed magnis augue lacus a, magna elementum. Parturient phasellus <a href="#resume">resume</a>
-               tincidunt nisi, augue vel sed dapibus sed enim.
-               Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.
-            </p>
-            <p>
-               Augue vel sed dapibus sed enim.
-               Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.
-            </p>
+      </section>
+
+      <!--Home-->
+      <section id="dd" class="home">
+         <section id="mon" class="cont">
+            <section class="home-title">
+               <h1>Hamid Paskamari</h1>
+               <hr/>
+               <h2> Web Developer / Designer</h2>
+            </section>
          </section>
       </section>
 
       <!-- Resume -->
-      <section id="resume" class="resume cover">
-         <section class="employment w10 h43 mt1 left overhide">
-            <h2>Employment</h2>
-            <menu class="employment">
-               <li>
-                  <h3>Chief Engineer</h3>
-                  <span class="place">Facebook</span>
-                  <span class="date">2011-2012</span>
-               </li>
-               <li>
-                  <h3>Chief Engineer</h3>
-                  <span class="place">Facebook</span>
-                  <span class="date">2011-2012</span>
-               </li>
-               <li>
-                  <h3>Chief Engineer</h3>
-                  <span class="place">Facebook</span>
-                  <span class="date">2011-2012</span>
-               </li>
-               <li>
-                  <h3>Chief Engineer</h3>
-                  <span class="place">Facebook</span>
-                  <span class="date">2011-2012</span>
-               </li>
-            </menu>
-            <h2>Education</h2>
-            <menu class="education">
-               <li>
-                  <h3>University of Cambridge</h3>
-                  <span class="course">Computer Science</span>
-                  <span class="date">2002</span>
-               </li>
-               <li>
-                  <h3>University of Cambridge</h3>
-                  <span class="course">Computer Science</span>
-                  <span class="date">2002</span>
-               </li>
-               <li>
-                  <h3>University of Cambridge</h3>
-                  <span class="course">Computer Science</span>
-                  <span class="date">2002</span>
-               </li>
-               <li>
-                  <h3>University of Cambridge</h3>
-                  <span class="course">Computer Science</span>
-                  <span class="date">2002</span>
-               </li>
-            </menu>
-         </section>
+      <section id="tt" class="resume">
+         <section id="mon" class="cont">
+            <section class="employment w10 h43 mt1 left overhide">
+               <h2>Employment</h2>
+               <menu class="employment">
+                  <li>
+                     <h3>Chief Engineer</h3>
+                     <span class="place">Facebook</span>
+                     <span class="date">2011-2012</span>
+                  </li>
+                  <li>
+                     <h3>Chief Engineer</h3>
+                     <span class="place">Facebook</span>
+                     <span class="date">2011-2012</span>
+                  </li>
+                  <li>
+                     <h3>Chief Engineer</h3>
+                     <span class="place">Facebook</span>
+                     <span class="date">2011-2012</span>
+                  </li>
+                  <li>
+                     <h3>Chief Engineer</h3>
+                     <span class="place">Facebook</span>
+                     <span class="date">2011-2012</span>
+                  </li>
+               </menu>
+               <h2>Education</h2>
+               <menu class="education">
+                  <li>
+                     <h3>University of Cambridge</h3>
+                     <span class="course">Computer Science</span>
+                     <span class="date">2002</span>
+                  </li>
+                  <li>
+                     <h3>University of Cambridge</h3>
+                     <span class="course">Computer Science</span>
+                     <span class="date">2002</span>
+                  </li>
+                  <li>
+                     <h3>University of Cambridge</h3>
+                     <span class="course">Computer Science</span>
+                     <span class="date">2002</span>
+                  </li>
+                  <li>
+                     <h3>University of Cambridge</h3>
+                     <span class="course">Computer Science</span>
+                     <span class="date">2002</span>
+                  </li>
+               </menu>
+            </section>
 
-      <section class="employment right w6 h43 mt1 overhide last">
-         <h2>Skills</h2>
-         <menu>
-            <li>
-               Adobe Photoshop
-               <span class="skillLevel"><span style="width:80%"></span></span>
-            </li>
-            <li>
-               Adobe Illustrator
-               <span class="skillLevel"><span style="width:50%"></span></span>
-            </li>
-            <li>
-               Adobe Flash
-               <span class="skillLevel"><span style="width:30%"></span></span>
-            </li>
-            <li>
-               HTML5 / CSS3
-               <span class="skillLevel"><span style="width:90%"></span></span>
-            </li>
-            <li>
-               jQuery
-               <span class="skillLevel"><span style="width:80%"></span></span>
-            </li>
-            <li>
-               Canvas
-               <span class="skillLevel"><span style="width:20%"></span></span>
-            </li>
-            <li>
-               Nunchucks
-               <span class="skillLevel"><span style="width:95%"></span></span>
-            </li>
-         </menu>
-      </section>
-
+            <section class="employment right w6 h43 mt1 overhide last">
+               <h2>Skills</h2>
+               <menu>
+                  <li>
+                     Adobe Photoshop
+                     <span class="skillLevel"><span style="width:80%"></span></span>
+                  </li>
+                  <li>
+                     Adobe Illustrator
+                     <span class="skillLevel"><span style="width:50%"></span></span>
+                  </li>
+                  <li>
+                     Adobe Flash
+                     <span class="skillLevel"><span style="width:30%"></span></span>
+                  </li>
+                  <li>
+                     HTML5 / CSS3
+                     <span class="skillLevel"><span style="width:90%"></span></span>
+                  </li>
+                  <li>
+                     jQuery
+                     <span class="skillLevel"><span style="width:80%"></span></span>
+                  </li>
+                  <li>
+                     Canvas
+                     <span class="skillLevel"><span style="width:20%"></span></span>
+                  </li>
+                  <li>
+                     Nunchucks
+                     <span class="skillLevel"><span style="width:95%"></span></span>
+                  </li>
+               </menu>
+            </section>
+         <section>
       </section>
 
       <!-- contact -->
+      <section id="yyy" class="contact">
+         <section id="mon" class="cont">
 
-      <section id="contact" class="contact cover">
+            <section class="w9 h43 overhide left">
 
-         <section class="w9 h43 overhide left">
-
-            <h2>Details</h2>
-            <menu class="contactDetails">
-               <li class="address">Address Line 1<br/>Address Line 2<br/>City<br/>Post Code</li>
-               <li class="mobile">07566 789 123</li>
-               <li class="phone">+44 (0)20 891 234</li>
-               <li class="mail">email@address.com</li>
-            </menu>
-
-            <div class="contactButtons">
-
-               <p><a class="button" href="#contact"><span aria-hidden="true" data-icon="&#x2b07;"></span> Download vCard</a></p>
-
-               <menu class="socialIcons">
-                  <!-- linkedin -->
-                  <li><a href="#contact"><span aria-hidden="true" data-icon="&#x69;"></span></a></li>
-
-                  <!-- vimeo -->
-                  <li><a href="#contact"><span aria-hidden="true" data-icon="&#x76;"></span></a></li>
-
-                  <!-- youtube -->
-                  <li><a href="#contact"><span aria-hidden="true" data-icon="&#x79;"></span></a></li>
-
-                  <!-- facebook -->
-                  <li><a href="#contact"><span aria-hidden="true" data-icon="&#x66;"></span></a></li>
-
-                  <!-- twitter -->
-                  <li><a href="#contact"><span aria-hidden="true" data-icon="&#x77;"></span></a></li>
-
-                  <!-- flickr -->
-                  <li><a href="#contact"><span aria-hidden="true" data-icon="&#x6b;"></span></a></li>
-
-                  <!-- G+ -->
-                  <li><a href="#contact"><span aria-hidden="true" data-icon="&#x2716;"></span></a></li>
+               <h2>Details</h2>
+               <menu class="contactDetails">
+                  <li class="address">Address Line 1<br/>Address Line 2<br/>City<br/>Post Code</li>
+                  <li class="mobile">07566 789 123</li>
+                  <li class="phone">+44 (0)20 891 234</li>
+                  <li class="mail">email@address.com</li>
                </menu>
 
-            </div>
+               <div class="contactButtons">
 
-         </section>
-      
-         <section class="w7 h43 overhide right last">
+                  <p><a class="button" href="#contact"><span aria-hidden="true" data-icon="&#x2b07;"></span> Download vCard</a></p>
 
-            <h2 id="contactForm">Get in Touch</h2>
+                  <menu class="socialIcons">
+                     <!-- linkedin -->
+                     <li><a href="#contact"><span aria-hidden="true" data-icon="&#x69;"></span></a></li>
 
-            <div class="contactPop"></div>
+                     <!-- vimeo -->
+                     <li><a href="#contact"><span aria-hidden="true" data-icon="&#x76;"></span></a></li>
 
-            <form id="ajax-contact-form" method="post" action="contactform/submit.php">
-               <label class="input"><span>Name</span><input type="text" name="name" value="" /></label>
-               <label class="input"><span>E-Mail</span><input type="text" name="email" value="" /></label>
-               <label class="input"><span>Message...</span><textarea name="message" rows="6" cols="30"></textarea></label>
-               <button name="submit" type="submit" class="btn"><span aria-hidden="true" data-icon="&#x25db;"></span> Send</button>
-            </form>
+                     <!-- youtube -->
+                     <li><a href="#contact"><span aria-hidden="true" data-icon="&#x79;"></span></a></li>
 
+                     <!-- facebook -->
+                     <li><a href="#contact"><span aria-hidden="true" data-icon="&#x66;"></span></a></li>
+
+                     <!-- twitter -->
+                     <li><a href="#contact"><span aria-hidden="true" data-icon="&#x77;"></span></a></li>
+
+                     <!-- flickr -->
+                     <li><a href="#contact"><span aria-hidden="true" data-icon="&#x6b;"></span></a></li>
+
+                     <!-- G+ -->
+                     <li><a href="#contact"><span aria-hidden="true" data-icon="&#x2716;"></span></a></li>
+                  </menu>
+
+               </div>
+
+            </section>
+         
+            <section class="w7 h43 overhide right last">
+
+               <h2 id="contactForm">Get in Touch</h2>
+
+               <div class="contactPop"></div>
+
+               <form id="ajax-contact-form" method="post" action="contactform/submit.php">
+                  <label class="input"><span>Name</span><input type="text" name="name" value="" /></label>
+                  <label class="input"><span>E-Mail</span><input type="text" name="email" value="" /></label>
+                  <label class="input"><span>Message...</span><textarea name="message" rows="6" cols="30"></textarea></label>
+                  <button name="submit" type="submit" class="btn"><span aria-hidden="true" data-icon="&#x25db;"></span> Send</button>
+               </form>
+
+            </section>
          </section>
       </section>
    </section>

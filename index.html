@@ -7,7 +7,35 @@
    <script type="text/javascript" src="script/script.js"></script>
 
    <style type="text/css">
+   .home{
+      width       :         650px;
+      height       :        450px;
+      background-color: #FFF;
+      position      :       absolute;
+      z-index          : 1;
+   }
+   .about{
+      width:650px;
+      height:450px;
+      background-color: #FFF;
+      position       :   absolute;
+      
+   }
+   .resume{
+      width:650px;
+      height:450px;
+      background-color: #FFF;
+      position: absolute;
+   }
+   .contact{
+      width:                650px;
+      height        :    450px;
+      background-color: #FFF;      
+      position: absolute;
+   }
 
+
+  
    /*
 
    .cont{
@@ -46,16 +74,7 @@
       -webkit-transition   :   all 2000ms;
       
    }
-   .home{
-      width       :         650px;
-      height       :        450px;
-      position      :       absolute;
-      z-index          : 1;
-      opacity           :1;
-      -webkit-transition   :   all 800ms;
-      -webkit-transform :      rotate3d(-6,4,0 ,0deg);
-      
-   }
+
 
    .cc{
       width       :         650px;
@@ -68,15 +87,7 @@
       -webkit-transition   :   all 2000ms;
       }
 
-   .about{
-      width:                650px;
-      height:            450px;
-      z-index       :    -10;
-      position       :   absolute;
-      opacity        :   0;
-      -webkit-transform :      rotate3d(-6,4,0 ,270deg);
-      -moz-transform     :     rotate3d(-6,4,0 ,270deg);
-   }
+  
    .ff{
       width:                650px;
       height:            450px;
@@ -91,25 +102,6 @@
 
 
 
-
-      .resume{
-         width:                650px;
-         height        :    450px;
-         position: absolute;
-         opacity:0;
-         -webkit-transform :      rotate3d(-6,4,0 ,270deg);
-      -moz-transform     :     rotate3d(-6,4,0 ,270deg);
-         
-      }
-      .contact{
-         width:                650px;
-         height        :    450px;
-          position: absolute;
-          opacity:0;
-          -webkit-transform :      rotate3d(-6,4,0 ,270deg);
-      -moz-transform     :     rotate3d(-6,4,0 ,270deg);
-          z-index:-1;
-      }
       section.page{
          width         :       650px;
          height         :     450px;
@@ -180,6 +172,17 @@
 
       <section id="containbox" class="contain">
 
+         <!--Home-->
+         <section id="dd" class="home">
+            <section id="mon" class="cont">
+               <section class="home-title">
+                  <h1>Hamid Paskamari</h1>
+                  <hr/>
+                  <h2> Web Developer / Designer</h2>
+               </section>
+            </section>
+         </section>
+
          <!--About me-->
 
          <section id="g" class="about">
@@ -209,99 +212,88 @@
             </section>
          </section>
 
-         <!--Home-->
-         <section id="dd" class="home">
-            <section id="mon" class="cont">
-               <section class="home-title">
-                  <h1>Hamid Paskamari</h1>
-                  <hr/>
-                  <h2> Web Developer / Designer</h2>
-               </section>
-            </section>
-         </section>
-
          <!-- Resume -->
          <section id="tt" class="resume">
-            <section id="mon" class="cont">
-               <section class="employment w10 h43 mt1 left overhide">
+            <section id="mon" class="cont cover">
+               <section class="w10 h43 mt1 left overhide">
                   <h2>Employment</h2>
-                  <menu class="employment">
+                  <menu>
                      <li>
                         <h3>Chief Engineer</h3>
-                        <span class="place">Facebook</span>
-                        <span class="date">2011-2012</span>
+                        <section class="place">Facebook</section>
+                        <section class="date">2011-2012</section>
                      </li>
                      <li>
                         <h3>Chief Engineer</h3>
-                        <span class="place">Facebook</span>
-                        <span class="date">2011-2012</span>
+                        <section class="place">Facebook</section>
+                        <section class="date">2011-2012</section>
                      </li>
                      <li>
                         <h3>Chief Engineer</h3>
-                        <span class="place">Facebook</span>
-                        <span class="date">2011-2012</span>
+                        <section class="place">Facebook</section>
+                        <section class="date">2011-2012</section>
                      </li>
                      <li>
                         <h3>Chief Engineer</h3>
-                        <span class="place">Facebook</span>
-                        <span class="date">2011-2012</span>
+                        <section class="place">Facebook</section>
+                        <section class="date">2011-2012</section>
                      </li>
                   </menu>
                   <h2>Education</h2>
                   <menu class="education">
                      <li>
                         <h3>University of Cambridge</h3>
-                        <span class="course">Computer Science</span>
-                        <span class="date">2002</span>
+                        <section class="course">Computer Science</section>
+                        <section class="date">2002</section>
                      </li>
                      <li>
                         <h3>University of Cambridge</h3>
-                        <span class="course">Computer Science</span>
-                        <span class="date">2002</span>
+                        <section class="course">Computer Science</section>
+                        <section class="date">2002</section>
                      </li>
                      <li>
                         <h3>University of Cambridge</h3>
-                        <span class="course">Computer Science</span>
-                        <span class="date">2002</span>
+                        <section class="course">Computer Science</section>
+                        <section class="date">2002</section>
                      </li>
                      <li>
                         <h3>University of Cambridge</h3>
-                        <span class="course">Computer Science</span>
-                        <span class="date">2002</span>
+                        <section class="course">Computer Science</section>
+                        <section class="date">2002</section>
                      </li>
                   </menu>
                </section>
 
-               <section class="employment right w6 h43 mt1 overhide last">
+               <section class="right w6 h43 mt1 overhide last">
                   <h2>Skills</h2>
                   <menu>
                      <li>
                         Adobe Photoshop
-                        <span class="skillLevel"><span style="width:80%"></span></span>
+                        <section class="skillLevel"><section style="width:80%"></section></section>
                      </li>
                      <li>
                         Adobe Illustrator
-                        <span class="skillLevel"><span style="width:50%"></span></span>
+                        <section class="skillLevel"><section style="width:50%"></section></section>
                      </li>
                      <li>
                         Adobe Flash
-                        <span class="skillLevel"><span style="width:30%"></span></span>
+                        <section class="skillLevel"><section style="width:30%"></section></section>
                      </li>
                      <li>
                         HTML5 / CSS3
-                        <span class="skillLevel"><span style="width:90%"></span></span>
+                        <section class="skillLevel"><section style="width:90%"></section></section>
                      </li>
                      <li>
                         jQuery
-                        <span class="skillLevel"><span style="width:80%"></span></span>
+                        <section class="skillLevel"><section style="width:80%"></section></section>
                      </li>
                      <li>
                         Canvas
-                        <span class="skillLevel"><span style="width:20%"></span></span>
+                        <section class="skillLevel"><section style="width:20%"></section></section>
                      </li>
                      <li>
                         Nunchucks
-                        <span class="skillLevel"><span style="width:95%"></span></span>
+                        <section class="skillLevel"><section style="width:95%"></section></section>
                      </li>
                   </menu>
                </section>

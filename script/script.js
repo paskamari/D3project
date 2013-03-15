@@ -6,12 +6,17 @@
 $(document).ready(function(){
 	var menu4 = $('.menu4taraf > li');
 	menu4.click(function(){
-		menu4.addClass("btnmenu");
+		$(menu4).addClass("btnmenu");
 		$(this).removeClass("btnmenu");
 		$(menu4).removeClass("btnmenuselect");
 		$(this).addClass("btnmenuselect");
 	});
 });
+	
+
+function mouseout() {
+	document.getElementById('mon').className='cont';
+}
 
 //background image
 
@@ -30,27 +35,3 @@ function lghtmesh() {
 function white_carbonfiber() {
 	document.getElementById('bodysite').className='timeout white_carbonfiber';
 }
-
-//onmouseout menu4
-function mouseout() {
-	document.getElementById('mon').className='cont';
-}
-
-///ofghjboiehoie
-
-function menu4click(){
-	document.getElementById('containbox').style.animation="ttt 1s forwards";	
-}
-
-//window.onload=function(){
-	
-//	var lists = document.getElementsByClassName('menu4').item(0).getElementsByTagName('li');
-
-//	for (var i=0; i<lists.length; i++) {
-//		(function(j){
-//			lists.item(j).onclick=function(){
-//				this.className='brd333';
-//			}
-//		})(i);
-//	}
-//}

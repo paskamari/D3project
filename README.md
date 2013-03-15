@@ -8,6 +8,7 @@
 * [CSS3](http://ali.md/css3ref)
 * [1Styles](http://ali.md/1styles)
 * [JavaScript](http://ali.md/wiki/javascript)
+* [jQuery.js](http://ali.md/jquery.js)
 
 ## THANKS (Contributors)
 * [Ali Mihandoost](https://github.com/AliMD) `AliMD`

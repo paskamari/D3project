@@ -8,34 +8,40 @@
    <link rel="stylesheet" type="text/css" href="style.css" />
 
    <style type="text/css">
-   .home{
+   .cont{
       width       :         650px;
       height       :        450px;
       background-color: #FFF;
-      position      :       absolute;
-      z-index          : 1;
+      -webkit-transition    :  all 400ms;
+
+
+   }
+   .home{
+      position:       absolute;
+      z-index:4;
+      top:0px;
+      left:0px;
+
    }
    .about{
-      width:650px;
-      height:450px;
-      background-color: #FFF;
-      position       :   absolute;
-      
+      position:       absolute;
+      z-index:3;
+      top:500px;
+      left:1000px;
    }
    .resume{
-      width:650px;
-      height:450px;
-      background-color: #FFF;
-      position: absolute;
+      position:       absolute;
+      z-index:2;
+      top:500px;
+      left:-1000px;
    }
+
    .contact{
-      width:                650px;
-      height        :    450px;
-      background-color: #FFF;      
-      position: absolute;
+      position:       absolute;
+      z-index:1;
+      top:-500px;
+      left:-1000px;
    }
-
-
   
    /*
 
@@ -154,32 +160,25 @@
       </menu>
    </div>
 
-   <div class="container">
+   <div class="container overhide">
       
       <!--Menu 4taraf-->
 
       <menu class="menu4taraf">
-         <li class="topLeft btnmenuselect">Home</li>
-         <li class="topRight">About</li>
-         <li class="bottomLeft">Resume</li>
-         <li class="bottomRight">Contact</li>
+         <li class="topLeft btnmenuselect" onmouseover="document.getElementById('mon').className='cont montopleft';"
+            onmouseout="mouseout();">Home
+         </li>
+         <li class="topRight btnmenu" onmouseover="document.getElementById('mon').className='cont montopright';"
+            onmouseout="mouseout();">About
+         </li>
+         <li class="bottomLeft btnmenu" onmouseover="document.getElementById('mon').className='cont monbottomleft';"
+            onmouseout="mouseout();">Resume
+         </li>
+         <li class="bottomRight btnmenu" onmouseover="document.getElementById('mon').className='cont monbottomright';"
+            onmouseout="mouseout();">Contact
+         </li>
       </menu>
 
- <!--
-      <section class="topLeft btnmenu" onmouseover="document.getElementById('mon').className='cont montopleft';"
-         onmouseout="mouseout();" 
-         onclick="document.getElementById('dd').className='cc'; document.getElementById('g').className='ff';">Home
-      </section>
-      <section class="topRight btnmenu" onmouseover="document.getElementById('mon').className='cont montopright';"
-         onmouseout="mouseout();" onclick="menu4click();">About
-      </section>
-      <section class="bottomLeft btnmenu" onmouseover="document.getElementById('mon').className='cont monbottomleft';"
-         onmouseout="mouseout();" onclick="menu4click();">Resume
-      </section>
-      <section class="bottomRight btnmenu" onmouseover="document.getElementById('mon').className='cont monbottomright';"
-         onmouseout="mouseout();" onclick="menu4click();">Contact
-      </section>
-Menu 4taraf-->
       <section id="containbox" class="contain">
 
          <!--Home-->
@@ -196,7 +195,7 @@ Menu 4taraf-->
          <!--About me-->
 
          <section id="g" class="about">
-            <section id="mon" class="cont">
+            <section  id="mon" class="cont">
                <section class="left-about w6 ml1 mt1 left">
                   <img src="images/01.jpg" alt="Hamid Paskamari">
                   <h3>Hamid Paskamari</h3>
@@ -224,7 +223,7 @@ Menu 4taraf-->
 
          <!-- Resume -->
          <section id="tt" class="resume">
-            <section id="mon" class="cont cover">
+            <section  id="mon" class="cont cover">
                <section class="w10 h43 mt1 left overhide">
                   <h2>Employment</h2>
                   <menu>
@@ -307,14 +306,14 @@ Menu 4taraf-->
                      </li>
                   </menu>
                </section>
-            <section>
+            </section>
          </section>
 
          <!-- contact -->
          <section id="yyy" class="contact">
-            <section id="mon" class="cont">
+            <section  id="mon" class="cont">
 
-               <section class="w9 h43 overhide left">
+               <section class="w9 h43 ml1 overhide left">
 
                   <h2>Details</h2>
                   <menu class="contactDetails">
@@ -355,7 +354,7 @@ Menu 4taraf-->
 
                </section>
             
-               <section class="w7 h43 overhide right last">
+               <section class="w6 h43 overhide right">
 
                   <h2 id="contactForm">Get in Touch</h2>
 

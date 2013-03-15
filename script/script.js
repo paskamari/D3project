@@ -1,13 +1,17 @@
+// JavaScript Document
+
+
+//menu4taraf
+
 $(document).ready(function(){
 	var menu4 = $('.menu4taraf > li');
-	menu4.addClass("btnmenu");
 	menu4.click(function(){
+		menu4.addClass("btnmenu");
+		$(this).removeClass("btnmenu");
 		$(menu4).removeClass("btnmenuselect");
 		$(this).addClass("btnmenuselect");
 	});
 });
-
-// JavaScript Document
 
 //background image
 

@@ -2186,11 +2186,7 @@
     width: 650px;
     height: 450px;
     position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    -webkit-transition: all 400ms;
   }
   .montopleft {
     -webkit-box-shadow: -10px -10px 20px rgba(0,0,0,0.3);

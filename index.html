@@ -8,145 +8,57 @@
    <link rel="stylesheet" type="text/css" href="style.css" />
 
    <style type="text/css">
-   .cont{
-      width       :         650px;
-      height       :        450px;
-      background-color: #FFF;
-      -webkit-transition    :  all 400ms;
-
-
-   }
    .home{
+      width:100%;
+      height: 100%;
       position:       absolute;
+      background-color: #FFF;
       z-index:4;
       top:0px;
       left:0px;
-
    }
    .about{
+      width:100%;
+      height: 100%;
       position:       absolute;
       z-index:3;
-      top:500px;
+      top:-600px;
       left:1000px;
+            background-color: #FFF;
+
    }
    .resume{
+      width:100%;
+      height: 100%;
       position:       absolute;
       z-index:2;
-      top:500px;
+      top:600px;
       left:-1000px;
+            background-color: #FFF;
    }
 
    .contact{
+      width:100%;
+      height: 100%;
       position:       absolute;
       z-index:1;
-      top:-500px;
-      left:-1000px;
+      top:600px;
+      left:1000px;
+            background-color: #FFF;
+
    }
-  
-   /*
-
-   .cont{
-      width     :           650px;
-      height     :          450px;
-      position    :         absolute;
-      background-color:     #FFF;
-      -webkit-box-shadow         : 0px 0px 10px rgba(0, 0, 0, 0.1);
-      -webkit-transition   :   all 600ms;
-
-   }  
-   
-   .montopleft{
-      -webkit-animation:sholt 1s forwards;      
-      -webkit-transform      : rotate3d(-6,4,0 ,10deg);
-      -moz-transform        :  rotate3d(-6,4,0 ,10deg);
-      -webkit-transition   :   all 400ms;
-      -moz-transition     : all 400ms;
+   .page1{
+      width:650px;
+      height: 450px;
+      position: absolute;
+      left      :           0;
+      top       :           0;
+      bottom    :           0;
+      right      :          0;
+      margin     :             auto;
+      outline:1px dashed red;
    }
 
-   @-webkit-keyframes sholt{
-      0%{-webkit-box-shadow         : 0px 0px 10px rgba(0, 0, 0, 0.1);}
-      100%{-webkit-box-shadow         :  -10px -10px 20px rgba(0, 0, 0, 0.1);}
-   }
-
-   .cc{
-      width       :         650px;
-      height       :        450px;
-      position      :       absolute;
-      z-index          : -10;
-      opacity           :0;
-      box-shadow         :  0 0 5px 3px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow     : 0 0 5px 3px rgba(0, 0, 0, 0.1);
-      -webkit-transform :      rotate3d(-6,4,0 ,90deg);
-      -moz-transform     :     rotate3d(-6,4,0 ,90deg);
-      -webkit-transition   :   all 2000ms;
-      
-   }
-
-
-   .cc{
-      width       :         650px;
-      height       :        450px;
-      position      :       absolute;
-      -webkit-transform :      rotate3d(-6,4,0 ,90deg);
-      -moz-transform     :     rotate3d(-6,4,0 ,90deg);
-      z-index          : -10;
-      opacity           :0;
-      -webkit-transition   :   all 2000ms;
-      }
-
-  
-   .ff{
-      width:                650px;
-      height:            450px;
-      overflow          :   hidden ;
-      z-index       :    10;
-      position       :   absolute;
-      opacity        :   1;
-      -webkit-transform :      rotate3d(-6,4,0 ,360deg);
-      -moz-transform     :     rotate3d(-6,4,0 ,360deg);  
-      -webkit-transition   :   all 4000ms;
-   }
-
-
-
-      section.page{
-         width         :       650px;
-         height         :     450px;
-         position        :     absolute;
-         left             : 0;
-         top               :0;
-         right              :  0;
-         bottom              : 0;
-         margin               :auto;
-         background-color     :#FFF;
-         -webkit-transition: all 2s;
-      }
-      section.page.home{
-         left: -1000px;
-         -webkit-transform: rotate(90deg);
-         -webkit-transform-origin: left top;
-         -moz-transform: rotate(90deg);
-         -moz-transform-origin: left top;
-      }
-      .page1 section.page.home{
-         left: 0px;
-         -webkit-transform: rotate(0deg);
-         -moz-transform: rotate(0deg);
-      }
-      @-webkit-keyframes ttt{
-         0%{
-            opacity: 1  ;
-         }
-         100%{
-            opacity: 0 ;
-         }
-      }
-      .btnselect{
-         color:red;
-         font-size :           40px;
-         -webkit-transition:      all 0.5s;
-         -moz-transition :     all 0.5s;
-      }*/
    </style>
 </head>
 <body id="bodysite" class="timeout bgnoise">
@@ -165,37 +77,34 @@
       <!--Menu 4taraf-->
 
       <menu class="menu4taraf">
-         <li class="topLeft btnmenuselect" onmouseover="document.getElementById('mon').className='cont montopleft';"
+         <li class="topLeft btnmenuselect" onmouseover="document.getElementById('containbox').className='contain montopleft';"
             onmouseout="mouseout();">Home
          </li>
-         <li class="topRight btnmenu" onmouseover="document.getElementById('mon').className='cont montopright';"
+         <li class="topRight btnmenu" onmouseover="document.getElementById('containbox').className='contain montopright';"
             onmouseout="mouseout();">About
          </li>
-         <li class="bottomLeft btnmenu" onmouseover="document.getElementById('mon').className='cont monbottomleft';"
+         <li class="bottomLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomleft';"
             onmouseout="mouseout();">Resume
          </li>
-         <li class="bottomRight btnmenu" onmouseover="document.getElementById('mon').className='cont monbottomright';"
+         <li class="bottomRight btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomright';"
             onmouseout="mouseout();">Contact
          </li>
       </menu>
 
-      <section id="containbox" class="contain">
-
-         <!--Home-->
-         <section id="dd" class="home">
-            <section id="mon" class="cont">
+      <section id="movepages" class="page1">
+         <section id="containbox" class="contain">
+            <!--Home-->
+            <section id="dd" class="home">
                <section class="home-title">
                   <h1>Hamid Paskamari</h1>
                   <hr/>
                   <h2> Web Developer / Designer</h2>
                </section>
             </section>
-         </section>
 
-         <!--About me-->
+            <!--About me-->
 
-         <section id="g" class="about">
-            <section  id="mon" class="cont">
+            <section id="g" class="about">
                <section class="left-about w6 ml1 mt1 left">
                   <img src="images/01.jpg" alt="Hamid Paskamari">
                   <h3>Hamid Paskamari</h3>
@@ -219,11 +128,9 @@
                   </p>
                </section>
             </section>
-         </section>
 
-         <!-- Resume -->
-         <section id="tt" class="resume">
-            <section  id="mon" class="cont cover">
+            <!-- Resume -->
+            <section id="tt" class="resume">
                <section class="w10 h43 mt1 left overhide">
                   <h2>Employment</h2>
                   <menu>
@@ -307,12 +214,9 @@
                   </menu>
                </section>
             </section>
-         </section>
 
-         <!-- contact -->
-         <section id="yyy" class="contact">
-            <section  id="mon" class="cont">
-
+            <!-- contact -->
+            <section id="yyy" class="contact">
                <section class="w9 h43 ml1 overhide left">
 
                   <h2>Details</h2>

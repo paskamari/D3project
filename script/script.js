@@ -15,7 +15,7 @@ $(document).ready(function(){
 	
 
 function mouseout() {
-	document.getElementById('mon').className='cont';
+	document.getElementById('containbox').className='contain';
 }
 
 //background image

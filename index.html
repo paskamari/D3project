@@ -8,57 +8,42 @@
    <link rel="stylesheet" type="text/css" href="style.css" />
 
    <style type="text/css">
-   .home{
-      width:100%;
-      height: 100%;
-      position:       absolute;
-      background-color: #FFF;
-      z-index:4;
-      top:0px;
-      left:0px;
-   }
-   .about{
-      width:100%;
-      height: 100%;
-      position:       absolute;
-      z-index:3;
-      top:-600px;
-      left:1000px;
-            background-color: #FFF;
-
-   }
    .resume{
-      width:100%;
-      height: 100%;
-      position:       absolute;
       z-index:2;
       top:600px;
       left:-1000px;
-            background-color: #FFF;
+      opacity:0.3;
+      -webkit-transform: rotate(90deg);
+   -webkit-transform-origin: left top;
+   }
+   .resumepage .resume{
+      top:0px;
+      left:0px;     
+      opacity:1;    -webkit-transform: rotate(0deg);
+
    }
 
    .contact{
-      width:100%;
-      height: 100%;
-      position:       absolute;
       z-index:1;
       top:600px;
       left:1000px;
-            background-color: #FFF;
+      opacity:0.3;
+      -webkit-transform: rotate(90deg);
+   -webkit-transform-origin: left top;
+   }
+   .contactpage .contact{
+      top:0px;
+      left:0px;      
+      opacity:1;   -webkit-transform: rotate(0deg);
 
    }
-   .page1{
-      width:650px;
-      height: 450px;
-      position: absolute;
-      left      :           0;
-      top       :           0;
-      bottom    :           0;
-      right      :          0;
-      margin     :             auto;
+   /*.right-about{
       outline:1px dashed red;
    }
-
+   .left-about{
+      outline:1px dashed red;
+   }
+*/
    </style>
 </head>
 <body id="bodysite" class="timeout bgnoise">
@@ -78,23 +63,23 @@
 
       <menu class="menu4taraf">
          <li class="topLeft btnmenuselect" onmouseover="document.getElementById('containbox').className='contain montopleft';"
-            onmouseout="mouseout();">Home
+            onmouseout="mouseout();" onclick="document.getElementById('movepages').className='homepage';">Home
          </li>
          <li class="topRight btnmenu" onmouseover="document.getElementById('containbox').className='contain montopright';"
-            onmouseout="mouseout();">About
+            onmouseout="mouseout();" onclick="document.getElementById('movepages').className='aboutpage';">About
          </li>
          <li class="bottomLeft btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomleft';"
-            onmouseout="mouseout();">Resume
+            onmouseout="mouseout();" onclick="document.getElementById('movepages').className='resumepage';">Resume
          </li>
          <li class="bottomRight btnmenu" onmouseover="document.getElementById('containbox').className='contain monbottomright';"
-            onmouseout="mouseout();">Contact
+            onmouseout="mouseout();" onclick="document.getElementById('movepages').className='contactpage';">Contact
          </li>
       </menu>
 
-      <section id="movepages" class="page1">
+      <section id="movepages" class="homepage">
          <section id="containbox" class="contain">
             <!--Home-->
-            <section id="dd" class="home">
+            <section class="home page overhide">
                <section class="home-title">
                   <h1>Hamid Paskamari</h1>
                   <hr/>
@@ -104,13 +89,13 @@
 
             <!--About me-->
 
-            <section id="g" class="about">
-               <section class="left-about w6 ml1 mt1 left">
-                  <img src="images/01.jpg" alt="Hamid Paskamari">
+            <section class="about page overhide cover">
+               <section class="left-about w6 h41 ml1 mt2 left">
+                  <img src="images/01.jpg" alt="Hamid Paskamari"/>
                   <h3>Hamid Paskamari</h3>
                   <h4>Web Developer / Designer</h4>
                </section>
-               <section class="right-about w9 mt1 right">
+               <section class="right-about w9 h43 mt1 right">
                   <h2>Doing it Right Since 1997</h2>
                   <p>
                      Sed <strong>magnis</strong> <em>augue</em> lacus a, magna elementum. <a href="#portfolio">Portfolio</a>
@@ -130,7 +115,7 @@
             </section>
 
             <!-- Resume -->
-            <section id="tt" class="resume">
+            <section class="resume page overhide">
                <section class="w10 h43 mt1 left overhide">
                   <h2>Employment</h2>
                   <menu>
@@ -216,7 +201,7 @@
             </section>
 
             <!-- contact -->
-            <section id="yyy" class="contact">
+            <section class="contact page overhide">
                <section class="w9 h43 ml1 overhide left">
 
                   <h2>Details</h2>

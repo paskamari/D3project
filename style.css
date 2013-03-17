@@ -2197,7 +2197,16 @@
     margin-left: 5px;
     cursor: pointer;
     display: inline;
+  }
+  .brdbbb {
     border: 1px solid #bbb;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
+  .brd333 {
+    border: 1px solid #333;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
   }
   .switcher li img {
     width: 24px;

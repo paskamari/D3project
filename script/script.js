@@ -4,6 +4,13 @@
 //menu4taraf
 
 $(document).ready(function(){
+	var switcher = $('.switch > li');
+	switcher.click(function(){
+		$(switcher).addClass("brdbbb");
+		$(this).removeClass("brdbbb");
+		$(switcher).removeClass("brd333");
+		$(this).addClass("brd333");
+	});
 	var menu4 = $('.menu4taraf > li');
 	menu4.click(function(){
 		$(menu4).addClass("btnmenu");

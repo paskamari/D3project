@@ -2338,6 +2338,48 @@
     font-size: 14px;
     top: -30px;
   }
+  .resume {
+    z-index: 2;
+    top: 600px;
+    left: -1000px;
+    opacity: 0.3;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: alpha(opacity=30);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+  }
+  .resumepage .resume {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  .contact {
+    z-index: 1;
+    top: 600px;
+    left: 1000px;
+    opacity: 0.3;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: alpha(opacity=30);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+  }
+  .contactpage .contact {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
 }
 @media print {
   * {

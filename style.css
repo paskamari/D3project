@@ -2216,6 +2216,9 @@
   .switcher li:first-child {
     margin-left: 0px;
   }
+  .menu4taraf {
+    font-family: 'Comic Sans MS', cursive;
+  }
   .btnmenu {
     position: absolute;
     color: #777;
@@ -2279,11 +2282,10 @@
     bottom: 0;
     margin: auto;
     text-align: center;
+    font-family: 'Comic Sans MS', cursive;
   }
   .home-title h1 {
     font-size: 70px;
-    color: #a9a9a9;
-    text-shadow: 0px 5px 3px rgba(0,0,0,0.9), -5px 0px 6px rgba(0,0,0,0.2);
   }
   .home-title h2 {
     font-size: 20px;
@@ -2291,15 +2293,17 @@
     position: absolute;
     top: 110px;
     left: 300px;
-    color: #a9a9a9;
     background-color: #fff;
-    text-shadow: 0px 2px 3px rgba(0,0,0,0.9), -2px 0px 6px rgba(0,0,0,0.2);
   }
   .home-title hr {
     width: 580px;
     margin: 0 auto;
     position: relative;
     top: -50px;
+  }
+  .Three-Dee {
+    color: #dfdfdf;
+    text-shadow: 1px 1px 1px #dfdfdf, -1px -1px 0px #d1d1d1, -2px -2px 0px #cfcfcf, -3px -3px 0px #c1c1c1, -4px -4px 0px #bfbfbf, -5px -5px 0px #b1b1b1, -6px -6px 0 #afafaf, -7px -7px 6px #a1a1a1, -7px -7px 1px #9f9f9f, 0px 0px 6px #919191;
   }
   .about {
     z-index: 3;

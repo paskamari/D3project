@@ -2120,6 +2120,9 @@
     width: 650px;
     height: 450px;
     position: absolute;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     -webkit-transition: all 400ms;
     -moz-transition: all 400ms;
   }
@@ -2263,7 +2266,9 @@
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
     filter: alpha(opacity=30);
     -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
     -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
   }
   .homepage .home {
     top: 0px;
@@ -2272,6 +2277,7 @@
     -ms-filter: none;
     filter: none;
     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   .home-title {
     height: 200px;

@@ -2078,19 +2078,19 @@
     margin: 0;
   }
   .squares {
-    background: url("images/squares.jpg");
+    background: url("images/background/squares.jpg");
   }
   .bgnoise {
-    background: url("images/bgnoise.jpg");
+    background: url("images/background/bgnoise.jpg");
   }
   .white_carbon {
-    background: url("images/white_carbon.png");
+    background: url("images/background/white_carbon.png");
   }
   .lghtmesh {
-    background: url("images/lghtmesh.jpg");
+    background: url("images/background/lghtmesh.jpg");
   }
   .white_carbonfiber {
-    background: url("images/white_carbonfiber.png");
+    background: url("images/background/white_carbonfiber.png");
   }
   .timeout {
     -webkit-transition: all 1s;

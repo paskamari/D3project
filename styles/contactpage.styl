@@ -33,7 +33,7 @@ h2.contact-title
 
 menu.contactDetails 
    width                            210px
-   height                           100px
+   height                           200px
    padding                          0px
 
 menu.contactDetails li 
@@ -68,7 +68,7 @@ menu.contactDetails li > img
 
 .contactIcon
    height                           55px
-   margin                           30px auto 0px
+   margin                           10px auto 0px
    padding                          0px
 
 .contactIcon li
@@ -85,3 +85,64 @@ menu.contactDetails li > img
    box-shadow                       0px 0px 10px rgba(0, 0, 0, 0.7)inset
    -webkit-transition               all 0.5s
    -moz-transition                  all 0.5s
+
+.contact-form .text
+   border                           1px solid #b2b2b2
+   box-shadow                       0px 0px 20px #b2b2b2 inset
+   font-family                      'Comic Sans MS', cursive
+   font-size                        16px
+   background-color                 #fafafa
+   padding                          2px
+   padding-left                     28px
+   margin                           15px auto
+   width                            200px
+   display                          block
+   -webkit-transition               all 0.5s
+   
+.contact-form .text:focus,
+.contact-form .text:hover
+   box-shadow                       0px 0px 15px #b2b2b2 inset
+   background-color                 #fff
+
+.contact-form .text:focus
+   box-shadow                       none
+   -webkit-transition               all 0.5s
+
+.contact-form .nameicon
+   background-image                 url('images/contact-page/name.png')
+   background-repeat                no-repeat
+   background-position              -10px -10px
+
+.contact-form input.nameicon:focus
+   background-image                 url('images/contact-page/name-active.png')
+   background-repeat                no-repeat
+   background-position              -18px -10px
+   
+.contact-form .mailicon
+   background-image                 url('images/contact-page/email.png')
+   background-repeat                no-repeat
+   background-position              -10px -10px
+   
+.contact-form input.mailicon:focus
+   background-image                 url('images/contact-page/email-active.png')
+   background-repeat                no-repeat
+   background-position              -18px -10px
+   
+.contact-form .texticon
+   background-image                 url('images/contact-page/message.png')
+   background-repeat                no-repeat
+   background-position              -10px -10px
+
+.contact-form .texticon:focus
+   background-image                 url('images/contact-page/message-active.png')
+   background-repeat                no-repeat
+   background-position              -18px -10px
+
+.contact-form textarea.texticon
+   height                           140px
+   resize                           none
+
+.contact-form .contact-btn
+   border                           none
+   position                         relative
+   left                             190px

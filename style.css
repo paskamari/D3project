@@ -2170,6 +2170,33 @@
     -webkit-transition: all 1500ms;
     -moz-transition: all 1500ms;
   }
+  .btn {
+    display: block;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #eee;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #999;
+    text-decoration: none;
+    -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
+  .btn:hover {
+    background-color: #e2e2e2;
+    color: #333;
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
   .switcher {
     position: fixed;
     bottom: 0;
@@ -2343,12 +2370,9 @@
     -moz-transform: rotate(0deg);
   }
   .left-about img {
-    border-style: solid;
-    border-color: #a9a9a9;
-    border-width: 10px;
-  }
-  .left-about * {
-    color: #000;
+    -webkit-box-shadow: 10px 10px 2px #ddd, 10px -10px 2px #ddd, -10px -10px 2px #ddd, -10px 10px 2px #ddd;
+    box-shadow: 10px 10px 2px #ddd, 10px -10px 2px #ddd, -10px -10px 2px #ddd, -10px 10px 2px #ddd;
+    -moz-box-shadow: 10px 10px 2px #ddd, 10px -10px 2px #ddd, -10px -10px 2px #ddd, -10px 10px 2px #ddd;
   }
   .left-about h3 {
     font-size: 20px;
@@ -2357,6 +2381,13 @@
     position: relative;
     font-size: 14px;
     top: -30px;
+  }
+  .about-position {
+    position: relative;
+    top: -40px;
+  }
+  .left-about menu {
+    font-size: 12px;
   }
   .resume {
     z-index: 2;
@@ -2428,32 +2459,6 @@
   menu.contactDetails li > img {
     margin-right: 10px;
   }
-  .contact-btn {
-    display: block;
-    text-align: center;
-    font-family: 'Comic Sans MS', cursive;
-    font-size: 15px;
-    padding: 10px;
-    background-color: #eee;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    color: #999;
-    text-decoration: none;
-    -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
-    box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-  }
-  .contact-btn:hover {
-    background-color: #e2e2e2;
-    color: #333;
-    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
-    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-  }
   .contactIcon {
     height: 55px;
     margin: 10px auto 0px;
@@ -2466,6 +2471,7 @@
     margin-left: 10px;
     -webkit-border-radius: 35px;
     border-radius: 35px;
+    -moz-border-radius: 35px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
   }
@@ -2480,6 +2486,7 @@
     border: 1px solid #b2b2b2;
     -webkit-box-shadow: 0px 0px 20px #b2b2b2 inset;
     box-shadow: 0px 0px 20px #b2b2b2 inset;
+    -moz-box-shadow: 0px 0px 20px #b2b2b2 inset;
     font-family: 'Comic Sans MS', cursive;
     font-size: 16px;
     background-color: #fafafa;
@@ -2489,17 +2496,21 @@
     width: 200px;
     display: block;
     -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
   }
   .contact-form .text:focus,
   .contact-form .text:hover {
     -webkit-box-shadow: 0px 0px 15px #b2b2b2 inset;
     box-shadow: 0px 0px 15px #b2b2b2 inset;
+    -moz-box-shadow: 0px 0px 15px #b2b2b2 inset;
     background-color: #fff;
   }
   .contact-form .text:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
+    -moz-box-shadow: none;
     -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
   }
   .contact-form .nameicon {
     background-image: url("images/contact-page/name.png");
@@ -2535,7 +2546,7 @@
     height: 140px;
     resize: none;
   }
-  .contact-form .contact-btn {
+  #contact-form .btn {
     border: none;
     position: relative;
     left: 190px;

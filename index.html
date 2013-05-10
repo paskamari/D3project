@@ -6,6 +6,23 @@
    <script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
    <script type="text/javascript" src="script/script.js"></script>
    <link rel="stylesheet" type="text/css" href="style.css" />
+   <style type="text/css">
+
+    .left-about{
+      outline:1px dashed red;
+    }
+    .left-about img{
+      border:10px solid #ddd;
+      outline:1px dashed red;
+    }
+    .left-about h3{
+      outline:1px dashed red;
+    }
+    .left-about h4{
+      outline:1px dashed red;
+    }
+
+   </style>
 </head>
 <body id="bodysite" class="timeout bgnoise">
    <div class="switcher cover">
@@ -49,29 +66,24 @@
             </section>
 
             <!--About me-->
-
-            <section class="about page overhide cover">
-               <section class="left-about w6 h41 ml1 mt2 left">
+            <section class="about page cover">
+               <section class="left-about w6 h41 ml1 mt2 left overhide">
                   <img src="images/about-page/me.jpg" alt="Hamid Paskamari" width="177" height="236"/>
                   <h3>Hamid Paskamari</h3>
                   <h4>Web Developer / Designer</h4>
-                  <section class="about-position">
-                    <menu>
-                      <li>CEO, Google 2001 - 2012</li>
-                      <li>University of Cambridge 1999</li>
-                    </menu>
-                    <a class="btn" href="#">Download Full CV</a>
-                  </section>  
+                  <h6>CEO, Google 2001 - 2012</h6>
+                  <h6>University of Cambridge 1999</h6>
+                  <a class="btn" href="#">Download Full CV</a>
                </section>
-               <section class="right-about w9 h43 mt1 right">
+               <section class="right-about w9 h43 mt1 right overhide">
                   <h2>Doing it Right Since 1997</h2>
                   <p>
-                     Sed <strong>magnis</strong> <em>augue</em> lacus a, magna elementum. <a href="#portfolio">Portfolio</a>
+                     Sed <strong>magnis</strong> augue lacus a, magna elementum. Portfolio
                      parturient phasellus tincidunt nisi, augue vel sed dapibus sed enim.
                      Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.
                   </p>
                   <p>
-                     Sed magnis augue lacus a, magna elementum. Parturient phasellus <a href="#resume">resume</a>
+                     Sed magnis augue lacus a, magna elementum. Parturient phasellus resume
                      tincidunt nisi, augue vel sed dapibus sed enim.
                      Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.
                   </p>
@@ -195,7 +207,7 @@
 
                 <h2 class="contact-title">Get in Touch</h2>
                 <section>
-                  <form id="contact-form" action="sendmail.php" method="post">
+                  <form id="contact-form" action="#" method="post">
                     <input class="text nameicon" type="text" name="name" id="name" placeholder="Name" />
                     <input class="text mailicon" type="text" name="mail" id="mail" placeholder="E-Mail" />
                     <textarea class="text texticon" name="txt" id="txt" placeholder="Message ..." ></textarea>
